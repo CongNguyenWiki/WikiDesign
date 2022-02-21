@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvTyple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="34dp"
+        android:text="@string/filter_sort_by"
+        android:textAlignment="textStart"
+        android:textColor="@color/filter_title"
+        android:textSize="15dp"
+        android:textStyle="bold"
+       />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerCheckBox"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="19dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/include_filter_view"/>
+
+
+</LinearLayout>

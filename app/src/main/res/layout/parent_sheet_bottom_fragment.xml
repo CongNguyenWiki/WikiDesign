@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="25dp"
+    android:background="@drawable/sheet_bottom_custom"
+    >
+
+    <TextView
+        android:id="@+id/tvHelpSignIn"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Need Help Signing In?"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        layout="@layout/view_bottom_sheet"
+        app:layout_constraintTop_toBottomOf="@id/tvHelpSignIn"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/viewHelpSignIn"
+        />
+
+    <TextView
+        android:id="@+id/tvExplore"
+        android:layout_width="233dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Explore"
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewHelpSignIn" />
+</androidx.constraintlayout.widget.ConstraintLayout>

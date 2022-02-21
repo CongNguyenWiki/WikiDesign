@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:background="@color/black"
+    style="@style/Toolbar"
+    android:layout_marginTop="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/ivLoginArrowBack"
+        android:src="@drawable/ic_arrow_back_white"
+        style="@style/ToolbarIcon"/>
+
+    <TextView
+        android:id="@+id/tvTitle_toolbar"
+        style="@style/ToolbarTitle"/>
+
+
+        <ImageView
+            android:id="@+id/ivIconHelp"
+            style="@style/ToolbarBigIcon"
+            android:src="@drawable/ic_more_horiz" />
+
+</LinearLayout>

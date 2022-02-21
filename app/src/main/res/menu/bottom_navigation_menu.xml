@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemDiscover"
+        android:title="@string/bottom_menu_discover"
+        />
+    <item
+        android:id="@+id/itemBuy"
+        android:title="@string/bottom_menu_shop"
+        />
+    <item
+        android:id="@+id/itemEvent"
+        android:title="@string/bottom_menu_event"/>
+    <item
+
+        android:id="@+id/itemPrivileges"
+        android:title="@string/bottom_menu_privileges"/>
+</menu>

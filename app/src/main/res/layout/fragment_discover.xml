@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_discover"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/linearPreferencesProfile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_54"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="@dimen/margin_20"
+        android:layout_marginTop="@dimen/padding_53"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/discover_notification_custom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/margin_10"
+        android:paddingBottom="@dimen/margin_10"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="38dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/preferences_profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:layout_width="11dp"
+            android:layout_height="9dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_baseline_arrow_black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="366dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wine"
+            android:textColor="@color/white"
+            android:textSize="@dimen/margin_10"
+            android:textAllCaps="true"
+            android:textAlignment="textStart"
+            />
+
+        <TextView
+            android:id="@+id/tvDiscoverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discover_type_name"
+            android:textSize="@dimen/margin_18"
+            android:textColor="@color/white"
+            android:layout_marginTop="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discover_description"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_13"
+            android:textAlignment="textStart"
+            android:layout_marginTop="3dp"/>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
