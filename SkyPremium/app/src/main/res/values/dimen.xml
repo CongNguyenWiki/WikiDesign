@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--  login screen-->
+  <dimen name="width_login_logo">200dp</dimen>
+
+  <dimen name="normal_padding">16dp</dimen>
+
+  <dimen name="large_padding">32dp</dimen>
+
+  <dimen name="small_padding">8dp</dimen>
+
+  <dimen name="extra_small_padding">4dp</dimen>
+
+
+  <!--Member card-->
+  <dimen name="member_name_size">24sp</dimen>
+  <dimen name="member_content_size_1">10sp</dimen>
+  <dimen name="member_content_size_2">6sp</dimen>
+  <dimen name="member_bottom_content_size">7sp</dimen>
+  <dimen name="member_card_padding">8dp</dimen>
+
+
+
+
+
+
+
+</resources>

@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/small_padding"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/normal_padding"
+    android:paddingTop="21dp"
+    android:paddingRight="@dimen/small_padding"
+    android:paddingBottom="21dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/tv_membership_tier"
+            fontPath="@string/fonts_Lato_Bold"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            tools:text="Renewal - Platium (FOUNDER)"
+            android:textSize="13sp"
+            android:textColor="#5A5A5A"
+            android:gravity="left"
+            android:layout_gravity="center_horizontal"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/tv_view_invoice"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            fontPath="@string/fonts_Lato_Medium"
+            android:maxLines="1"
+            android:text="view_invoice"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#B4B4B4"
+            android:textSize="9sp"
+            tools:ignore="MissingPrefix" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingPrefix">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            >
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="Membership \nFee"
+                android:lines="2"
+                android:gravity="bottom|left"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp" />
+
+            <TextView
+                android:id="@+id/tv_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.02"
+                fontPath="@string/fonts_Lato_Medium"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                android:textColor="#5A5A5A"
+                android:textSize="9sp"
+                tools:text="100"
+                tools:ignore="MissingPrefix" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:letterSpacing="0.05"
+                android:text="Membership \nStart Date"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+
+            <TextView
+                android:id="@+id/tv_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                fontPath="@string/fonts_Lato_Medium"
+                android:text="0.0"
+                android:textColor="#5A5A5A"
+                android:textSize="9sp"
+                tools:text="2 nd May 2021"
+                tools:ignore="MissingPrefix" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="0.6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:ellipsize="end"
+                android:letterSpacing="0.05"
+                android:text="Membership \nEnd Date"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+
+            <TextView
+                android:id="@+id/tv_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="5dp"
+                android:maxLines="1"
+                fontPath="@string/fonts_Lato_Medium"
+                android:text="0.0"
+                android:textColor="#5A5A5A"
+                android:textSize="9sp"
+                tools:text="2 nd May 2021"
+                tools:ignore="MissingPrefix" />
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingPrefix">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="Membership Fee \nPayment Date"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+
+            <TextView
+                android:id="@+id/tv_payment_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.02"
+                android:maxLines="1"
+                android:layout_marginTop="5dp"
+                fontPath="@string/fonts_Lato_Medium"
+                android:textColor="#5A5A5A"
+                android:textSize="9sp"
+                tools:text="2 nd May 2021"
+                tools:ignore="MissingPrefix" />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="2"
+                android:gravity="bottom|left"
+                android:letterSpacing="0.05"
+                android:text="Type"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.02"
+                android:text="0.0"
+                android:layout_marginTop="5dp"
+                fontPath="@string/fonts_Lato_Medium"
+                android:textColor="#5A5A5A"
+                android:textSize="9sp"
+                tools:text=""
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.6"
+            >
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:ellipsize="end"
+                android:letterSpacing="0.05"
+                android:text="Associated \nCode(s)"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+
+            <TextView
+                android:id="@+id/tv_associated_code"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:letterSpacing="0.02"
+                android:text="0.0"
+                fontPath="@string/fonts_Lato_Medium"
+                android:textColor="#5A5A5A"
+                android:textStyle="bold"
+                android:textSize="9sp"
+                tools:text=""
+                tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingPrefix">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.05"
+                android:text="Payment \nPlan"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+
+            <TextView
+                android:id="@+id/tv_payment_plan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="5dp"
+                fontPath="@string/fonts_Lato_Medium"
+                android:textColor="#5A5A5A"
+                android:textSize="9sp"
+                tools:text="2 nd May 2021"
+                tools:ignore="MissingPrefix"
+                android:paddingRight="8dp"/>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.5">
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:letterSpacing="0.05"
+                android:text="Payment \nStatus"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+
+            <TextView
+                android:id="@+id/tv_payment_status"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:letterSpacing="0.02"
+                android:text="-"
+                fontPath="@string/fonts_Lato_Medium"
+                android:textColor="#5A5A5A"
+                android:textStyle="bold"
+                android:textSize="9sp"
+                tools:text=""
+                tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="0.6"
+            >
+
+            <TextView
+                fontPath="@string/fonts_Lato_Bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:ellipsize="end"
+                android:letterSpacing="0.05"
+                android:text="Next Membership \nFee Payment Date"
+                android:textAllCaps="true"
+                android:textColor="#BAA9AD"
+                android:textSize="7sp"
+                android:paddingRight="8dp"
+                android:lines="2"
+                android:gravity="bottom|left"/>
+
+            <TextView
+                android:id="@+id/tv_next_membership_fee_payment_date"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:letterSpacing="0.02"
+                android:text="0.0"
+                fontPath="@string/fonts_Lato_Medium"
+                android:textColor="#5A5A5A"
+                android:textStyle="bold"
+                android:textSize="9sp"
+                tools:text=""
+                tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

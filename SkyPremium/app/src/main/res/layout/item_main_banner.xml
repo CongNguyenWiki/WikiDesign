@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#20656565">
+  <ImageView
+    android:id="@+id/img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/wine_4"
+    android:scaleType="centerCrop"/>
+  <FrameLayout
+    android:id="@+id/flGrayBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A61B1B1B" />
+  <LinearLayout
+
+    android:id="@+id/llMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:visibility="invisible">
+    <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Welcome to The Good Life"
+      android:textColor="@color/textWhite"
+      fontPath="@string/fonts_Adobe_Garamond_Pro_Regular"
+      android:textSize="28sp"
+      tools:ignore="MissingPrefix" />
+
+    <TextView
+      android:id="@+id/tvCustomerName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:text="Ms Jane Doe"
+      android:textColor="@color/textWhite"
+      fontPath="@string/fonts_Notera_PersonalUseOnly"
+      android:textSize="24sp"
+      tools:ignore="MissingPrefix" />
+  </LinearLayout>
+  <LinearLayout
+
+    android:id="@+id/llCategory"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:paddingHorizontal="50dp"
+    android:visibility="visible">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center">
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        fontPath="@string/fonts_CormorantGaramond_Regular"
+        android:text="\u201d"
+        tools:ignore="MissingPrefix"
+        android:rotation="180"/>
+      <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Experience ultimate convenience and first-class privileges delivered to you."
+        android:textColor="@color/textWhite"
+        fontPath="@string/fonts_Adobe_Garamond_Pro_Regular"
+        android:textSize="28sp"
+        tools:ignore="MissingPrefix"
+        android:gravity="center"/>
+
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        fontPath="@string/fonts_CormorantGaramond_Regular"
+        android:text="\u201d"
+        tools:ignore="MissingPrefix"/>
+    </LinearLayout>
+
+    <TextView
+      android:id="@+id/tvMainContent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Enjoy the ultimate standard of personal luxury with a touch of Japanese hospitality (omotenashi)."
+      android:textColor="@color/textWhite"
+      fontPath="@string/fonts_Lato_Regular"
+      android:gravity="center"
+      android:textSize="15sp"
+      tools:ignore="MissingPrefix"/>
+    <TextView
+      android:id="@+id/tvName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="White Glove Service"
+      android:textColor="@color/textWhite"
+      fontPath="@string/fonts_Adobe_Garamond_Pro_Regular"
+      android:textSize="18sp"
+      android:layout_marginVertical="18dp"
+      tools:ignore="MissingPrefix" />
+  </LinearLayout>
+</FrameLayout>
