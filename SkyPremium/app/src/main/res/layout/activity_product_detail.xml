@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical">
+
+  <include layout="@layout/include_toolbar"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_marginTop="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:id="@+id/tvJson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+
+
+      <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+
+      <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10">
+
+        <TextView
+          android:id="@+id/tvNameProduct"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:gravity="left"
+          android:layout_weight="7"
+          android:textSize="18sp"
+          android:textColor="@color/black"
+          tools:text="Name of Product"/>
+
+        <TextView
+          android:id="@+id/tvPrice"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="3"
+          android:gravity="right"
+          android:textColor="@color/black"
+          android:textSize="12sp"
+          tools:text="$50"/>
+
+
+
+      </LinearLayout>
+
+      <TextView
+        android:id="@+id/tvCategory"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Category"/>
+
+      <TextView
+        android:id="@+id/tvDescription"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        tools:text="Description"/>
+
+    </LinearLayout>
+
+
+  </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/white"
+  android:fitsSystemWindows="true"
+  android:orientation="vertical">
+
+  <include layout="@layout/include_mymembership_statement_toolbar"/>
+  <androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1">
+
+    <com.google.android.material.appbar.AppBarLayout
+      android:id="@+id/my_appbar_container"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll"
+        android:orientation="vertical">
+        <LinearLayout
+          android:id="@+id/layout_avatar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center_horizontal"
+          android:orientation="horizontal"
+          android:visibility="visible">
+
+          <ImageView
+            android:id="@+id/img_avatar"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/human" />
+
+        </LinearLayout>
+
+
+        <TextView
+          android:id="@+id/tvName"
+          style="@style/TextAppearance.AppCompat.Headline"
+          fontPath="@string/fonts_Notera_PersonalUseOnly"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/normal_padding"
+          android:layout_marginBottom="4dp"
+          android:gravity="center"
+          android:textColor="@color/yellowDark"
+          tools:ignore="MissingPrefix"
+          tools:text="Mr Laurent Anderson" />
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:gravity="center"
+          android:visibility="visible"
+          android:orientation="horizontal">
+
+          <TextView
+            android:id="@+id/tvMemberLabel"
+            style="@style/TextAppearance.AppCompat.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="Membership ID "
+            fontPath="@string/fonts_Lato_Regular"
+            android:textColor="#4A4949"
+            android:textSize="13sp"
+            tools:ignore="MissingPrefix" />
+
+          <TextView
+            android:id="@+id/tvMemberNumber"
+            style="@style/TextAppearance.AppCompat.Caption"
+            fontPath="@string/fonts_Lato_Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="bottom"
+            android:text="SGD000000001"
+            android:textAllCaps="true"
+            android:textColor="#4A4949"
+            android:textSize="13sp"
+            tools:ignore="MissingPrefix" />
+        </LinearLayout>
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="16dp"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:visibility="visible">
+
+          <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            fontPath="@string/fonts_Lato_Bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/square_orchid"
+            android:paddingLeft="8dp"
+            android:paddingTop="2dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="2dp"
+            android:text="Premium"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:visibility="gone"
+            tools:ignore="MissingPrefix" />
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+              android:id="@+id/txt_amtloyalty"
+              style="@style/TextAppearance.AppCompat.Medium"
+              fontPath="@string/fonts_Lato_Bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="4dp"
+              android:textAllCaps="true"
+              android:textColor="@color/textColorPrimary"
+              tools:ignore="MissingPrefix"
+              tools:text="30,230" />
+
+            <TextView
+              style="@style/TextAppearance.AppCompat.Caption"
+              fontPath="@string/fonts_Lato_Bold"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Sky dollar"
+              android:textAllCaps="true"
+              android:textColor="@color/orchid"
+              android:textSize="10sp"
+              tools:ignore="MissingPrefix" />
+          </LinearLayout>
+
+          <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+              android:id="@+id/tvLoyaltyExpireDate"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="4dp"
+              android:textAllCaps="false"
+              android:textColor="#A3A3A3"
+              android:textSize="10sp"
+              tools:text="@string/sky_dollar_exp_on" />
+          </LinearLayout>
+
+          <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="#4A4949"
+            fontPath="@string/fonts_Lato_Semibold"
+            android:textSize="13sp"
+            android:text="-"
+            tools:ignore="MissingPrefix" />
+
+
+          <TextView
+            android:id="@+id/tvMembership"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="Your membership is active and will expire on \n16 May 2021"
+            android:textColor="#4A4949"
+            android:textSize="12sp"
+            fontPath="@string/fonts_Lato_Semibold"
+            android:gravity="center_horizontal"
+            tools:ignore="MissingPrefix" />
+
+
+        </LinearLayout>
+      </LinearLayout>
+
+
+      <include
+        layout="@layout/include_filter_not_refine"
+        android:visibility="visible"
+        />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <!--
+            <TextView
+                android:id="@+id/tvMembership"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_filter"
+                android:text=""
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:background="@drawable/bg_btn_normal"
+                android:gravity="center_horizontal"/>
+    -->
+
+    <LinearLayout
+      android:id="@+id/layout_button"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:layout_below="@+id/tvMembership"
+      android:visibility="gone"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <Button
+        android:id="@+id/btn_renew_membership"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text=""
+        android:visibility="gone"
+        android:background="@color/colorSaleNotStartedLight"
+        android:layout_weight="6"/>
+
+      <TextView
+        android:id="@+id/tv_cancel_membership"
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:text="@string/cancel_membership_statement"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+      android:id="@+id/tv_history"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="15dp"
+      android:layout_marginRight="15dp"
+      android:padding="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/layout_button"
+      android:text="Membership History"
+      android:textStyle="bold"
+      android:visibility="gone"
+      android:textSize="14sp"
+      android:textColor="@color/black"
+      android:gravity="center_horizontal"/>
+
+    <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#F9F9F9"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMyMembershipStatement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="12dp"
+        android:layout_below="@+id/tv_history"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="@dimen/normal_padding"
+        android:paddingRight="@dimen/normal_padding"
+        android:paddingTop="@dimen/extra_small_padding"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+
+
+
+      <RelativeLayout
+        android:id="@+id/layout_no_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:gravity="center"
+        android:visibility="gone"
+        tools:ignore="MissingPrefix">
+
+        <ImageView
+          android:id="@+id/img_no_order"
+          android:layout_width="40dp"
+          android:layout_height="44dp"
+          android:layout_centerHorizontal="true"
+          android:layout_marginBottom="@dimen/small_padding"
+          android:src="@drawable/ic_no_orders"/>
+
+        <TextView
+          android:id="@+id/txt_no_order"
+          style="@style/TextAppearance.AppCompat.Medium"
+          fontPath="@string/fonts_Adobe_Garamond_Pro_Regular"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/img_no_order"
+          android:gravity="center_horizontal"
+          android:letterSpacing="0.03"
+          android:text="You do not have any membership history"
+          android:textColor="@color/textColorPrimary"/>
+
+      </RelativeLayout>
+
+
+    </LinearLayout>
+
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>

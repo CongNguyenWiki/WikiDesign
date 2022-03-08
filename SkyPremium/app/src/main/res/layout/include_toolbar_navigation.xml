@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/toolbar"
+  android:background="@color/colorPrimary"
+  android:layout_height="50dp"
+  android:layout_width="match_parent">
+
+  <ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:padding="15dp"
+    android:layout_gravity="center_vertical"
+    android:id="@+id/ivNavigation_toolbar"
+    android:src="@drawable/hamburger_icon_gold"/>
+
+  <TextView
+    android:id="@+id/tvTitle_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/textTitleColor"
+    android:layout_gravity="center"
+    android:gravity="center_vertical|center"
+
+    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+    fontPath="@string/fonts_Adobe_Garamond_Pro_Regular"
+    android:letterSpacing="0.03"
+    tools:text="Title Toolbar "
+    tools:ignore="MissingPrefix"/>
+
+
+
+</FrameLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+  <include layout="@layout/include_toolbar_title_id"/>
+  <include layout="@layout/include_filter_shadow" />
+  <FrameLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_reservation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="@dimen/normal_padding"
+        android:paddingTop="@dimen/normal_padding"/>
+    <LinearLayout
+        android:id="@+id/ll_no_reservation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+      <ImageView
+          android:layout_width="45dp"
+          android:layout_height="45dp"
+          android:src="@drawable/ic_no_orders"
+          android:layout_gravity="center"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          fontPath="@string/fonts_Adobe_Garamond_Pro_Regular"
+          android:textSize="12sp"
+          android:layout_marginVertical="@dimen/margin_tiny"
+          android:text="You have no reservations."
+          tools:ignore="MissingPrefix" />
+    </LinearLayout>
+  </FrameLayout>
+</LinearLayout>

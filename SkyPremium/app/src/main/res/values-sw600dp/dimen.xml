@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--  login screen-->
+  <dimen name="width_login_logo">400dp</dimen>
+
+  <!--Member card-->
+  <dimen name="member_name_size">48sp</dimen>
+  <dimen name="member_content_size_1">24sp</dimen>
+  <dimen name="member_content_size_2">12sp</dimen>
+  <dimen name="member_bottom_content_size">12sp</dimen>
+  <dimen name="member_card_padding">12dp</dimen>
+
+</resources>

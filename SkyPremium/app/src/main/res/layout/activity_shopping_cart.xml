@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <include layout="@layout/include_toolbar_navigation"/>
+
+  <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <TextView
+        android:id="@+id/tvJson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"/>
+
+
+      <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCart"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvJson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_product"/>
+
+
+    </RelativeLayout>
+
+
+
+  </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <dimen name="margin_normal">16dp</dimen>
+  <dimen name="size_product_icon">24dp</dimen>
+  <dimen name="text_size_extra_small">9sp</dimen>
+  <dimen name="text_size_normal">12sp</dimen>
+  <dimen name="text_size_small">11sp</dimen>
+  <dimen name="margin_small">8dp</dimen>
+  <dimen name="triple_padding">24dp</dimen>
+  <dimen name="margin_tiny">4dp</dimen>
+  <dimen name="text_size_big3">20sp</dimen>
+  <dimen name="text_size_normal_3">15sp</dimen>
+  <dimen name="margin_large">24dp</dimen>
+  <dimen name="text_size_big">16sp</dimen>
+  <dimen name="text_size_big1">17sp</dimen>
+  <dimen name="text_size_tiny">8sp</dimen>
+  <dimen name="status_bar_height">0dp</dimen>
+  <dimen name="expandable_group_text_size">15dp</dimen>
+  <dimen name="expandable_seconds_text_size">13.5dp</dimen>
+  <dimen name="expandable_thirds_text_size">11.5dp</dimen>
+
+
+</resources>
